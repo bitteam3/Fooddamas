@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style>
+        .help-block {
+            font-size: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+</header>
+<div class="container">
+    <form action="">
+        <div class="form-group has-warning has-feedback">
+            <label for="element-1" class="control-label"> this is the text of the label</label>
+            <input type="text" id="element-1" class="form-control">
+            <span class="glyphicon glyphicon-chevron-down form-control-feedback"></span>
+        </div>
+        <div class="form-group has-error has-feedback">
+            <label for="element-2" class="control-label"> this is the text of the label2</label>
+            <input type="text" id="element-2" class="form-control">
+            <span class="glyphicon glyphicon-chevron-down form-control-feedback"></span>
+            <p class="help-block">Enter the password with a Capital letter included</p>
+        </div>
+        <div class="form-group has-success has-feedback">
+            <label for="element-2"> this is the text of the label2</label>
+            <input type="text" id="element-5" class="form-control">
+        </div>
+        <p class="help-block">Enter the password with a Capital letter included</p>
+    </form>
+
+    <hr>
+
+    <form action="" class="form-inline">
+        <div class="form-group">
+            <input type="text" id="element-3" class="form-control" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <input type="text" id="element-4" class="form-control" placeholder="Enter Passwod">
+        </div>
+        <div class="checkbox">
+            <label for=""><input type="checkbox">Remeber me</label>
+        </div>
+        <button type="button" class="btn btn-primary">Sign in</button>
+
+    </form>
+
+    <hr>
+
+    <form action="">
+        <div class="row">
+            <div class="col-lg-2">
+                <input type="text" class="form-control" placeholder="This is 2 block wide">
+            </div>
+            <div class="col-lg-4">
+                <input type="text" class="form-control" placeholder="This is 4 block wide">
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control" placeholder="This is 6 block wide">
+            </div>
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>
+

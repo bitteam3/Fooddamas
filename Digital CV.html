@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hello</title>
+    <meta charset="utf-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $("#introduce").on("click", function () {
+           console.log("click....");
+        });
+
+        $("#profile").on("click", function () {
+            console.log("click....");
+        });
+        $("#experience").on("click", function () {
+            console.log("click....");
+        });
+        $("#education").on("click", function () {
+            console.log("click....");
+        });
+        $("#blog").on("click", function () {
+            console.log("click....");
+        });
+        $("#social").on("click", function () {
+            console.log("click....");
+        });
+        $("#contact").on("click", function () {
+            console.log("click....");
+        });
+        $("#portfolio").on("click", function () {
+            console.log("click....");
+        });
+
+
+        console.log(window.innerWidth);
+        console.log(window.innerHeight);
+    });
+
+
+</script>
+<header>
+    <style>
+        .container {
+            width: 100%;
+            /*border: solid 1px black;*/
+        }
+
+        @media all and (max-width: 3000px) {
+            .box {
+                height: 220px;
+                padding-top: 80px;
+                line-height: 30px;
+            }
+
+            .msg {
+                font-size: 20px;
+            }
+        }
+
+        /* lg size */
+        @media all and (max-width: 992px) {
+            .box {
+                height: 50px;
+                padding-top: 10px;
+                display: block;
+            }
+            .msg {
+                display: none;
+            }
+            #face{
+                height:30px;
+                width:30px;
+            }
+        }
+
+        /*md size*/
+        /*
+        @media all and (max-width: 970px) {
+            .box {
+                height: 50px;
+            }
+        }*/
+
+        /*sm size*/
+        @media all and (max-width: 768px) {
+            .box {
+            }
+        }
+
+        #introduce {
+            background-color: #37bd7a;
+        }
+
+        #profile {
+            background-color: #fc9c00;
+        }
+
+        #experience {
+            background-color: #1f8cc2;
+        }
+
+        #education {
+            background-color: #f05948;
+        }
+
+        #blog {
+            background-color: #37bd7a;
+        }
+
+        #social {
+            background-color: #f56725;
+        }
+
+        #contact {
+            background-color: #1f8cc2;
+        }
+
+        #portfolio {
+            background-color: #f56725;
+        }
+
+        #gallery {
+
+        }
+
+        #menu {
+
+            /*border: solid 1px black;*/
+        }
+
+        .glyphicon {
+            font-size: 2em;
+            color: #ffffff;
+
+        }
+
+        .col-md-4 {
+            color: #fff;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .col-md-8 {
+            color: #fff;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+        .col-md-6 {
+            color: #fff;
+            margin: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+
+        }
+
+        .box {
+            text-align: center;
+        }
+
+
+    </style>
+</header>
+<div class="container">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand ">Brand</a>
+            </div>
+
+
+            <div class="collapse navbar-collapse" id="example">
+                <ul class="nav navbar-nav">
+                    <li><a href="">Link1</a></li>
+                    <li class="active"><a href="">Link2</a></li>
+                </ul>
+
+                <a href="" class="btn btn-primary narvbar-btn">A button</a>
+
+                <form action="" class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search this out">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-8" id="menu">
+
+            <div class="col-md-8 box" id="introduce">
+                <img src="1.jpg" width="50" height="50" style="border-radius:100px;" id="face">
+                <br>
+                <p class="msg">SungHyun Lee</p>
+            </div>
+
+
+            <div class="col-md-4 col-sm-6  box" id="profile">
+                <span class="glyphicon glyphicon-user"></span>
+                <br>
+                <p class="msg">PROFILE</p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 box" id="experience">
+                <span class="glyphicon glyphicon-th-list"></span>
+                <br>
+                <p class="msg">EXPERIENCE</p>
+            </div>
+            <div class="col-md-4 col-sm-6 box" id="education">
+                <span class="glyphicon glyphicon-pencil"></span>
+                <br>
+                <p class="msg">EDUCATION</p>
+
+            </div>
+            <div class="col-md-4 col-sm-6 box" id="blog">
+                <span class="glyphicon glyphicon-home"></span>
+                <br>
+                <p class="msg">BLOG</p>
+
+            </div>
+            <div class="col-md-4 col-sm-6 box" id="social">
+                <span class="glyphicon glyphicon-thumbs-up"></span>
+                <br>
+                <p class="msg">SOCIAL</p>
+            </div>
+            <div class="col-md-4 col-sm-6 box" id="contact">
+                <span class="glyphicon glyphicon-user"></span>
+                <br>
+                <p class="msg"> CONTACT</p>
+
+
+            </div>
+            <div class="col-md-4 col-sm-12 box" id="portfolio">
+                <span class="glyphicon glyphicon-lock"></span>
+                <br>
+                <p class="msg"> PORTFOLIO</p>
+
+
+            </div>
+        </div>
+
+        <div class="col-md-4" id="gallery">
+            <div class="carousel slide" data-ride="carousel" id="myPicture">
+                <ol class="carousel-indicators">
+                    <li data-target="#myPicture" data-slide-to="0" class="active"></li>
+                    <li data-target="#myPicture" data-slide-to="1"></li>
+                    <li data-target="#myPicture" data-slide-to="2"></li>
+                </ol>
+
+                <div class="carousel-inner" role="listbox" style="width:100%;">
+                    <div class="item active">
+                        <img src="1.jpg" alt="iwan" style="width: 100%; height:660px;">
+                    </div>
+
+                    <div class="item">
+                        <img src="2.jpg" alt="rabit" style="width: 100%; height:660px;">
+                    </div>
+
+                    <div class="item">
+                        <img src="3.jpg" alt="tang" style="width: 100%; height:660px;">
+                    </div>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myPicture" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myPicture" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+</footer>
+</body>
+</html>
+
